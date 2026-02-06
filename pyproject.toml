@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Uni-Menu-Automation"
+version = "0.1.0"
+description = "Automated university menu scraper and Discord notifier"
+readme = "README.md"
+requires-python = ">=3.13"
+license = {text = "MIT"}
+dependencies = [
+    "requests",
+    "discord-webhook",
+    "python-dotenv"
+]
+
+[project.urls]
+Homepage = "https://github.com/rlule15/Uni-Menu-Automation.git"
+
+[project.scripts]
+uni-menu = "app.main:main"
